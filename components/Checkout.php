@@ -55,7 +55,7 @@ class Checkout extends BaseStripeComponent
                   'product_data' => [
                       'name' => $orderDescription
                   ],
-                  'unit_amount' => (int) $orderAmount * 100,
+                  'unit_amount' => $orderAmount * 100,
               ],
               'quantity' => 1,
           ]],
